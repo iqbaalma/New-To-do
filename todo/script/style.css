@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.custom-accordion {
+    margin: 10px auto;
+    max-width: 600px;
+    background-color: rgb(222, 221, 255);
+    text-align: center;
+    overflow-y: hidden;
+    border-radius: 0 0 10px 10px;
+    transition: all 200ms linear;
+}
+
+.custom-accordion>button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 0 0 10px 10px;
+    background-color: transparent;
+    font-size: 21px;
+    width: 100%;
+    transition: all 200ms linear;
+    padding: 0 12px ;
+}
+
+.custom-accordion>button:hover {
+    background-color: rgb(44, 38, 222);
+    color: white;
+}
+
+.custom-accordion>.custom-accordion-body {
+    max-height: 0px;
+}
